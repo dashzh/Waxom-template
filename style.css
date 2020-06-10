@@ -1041,19 +1041,19 @@ input[type=text]:focus, input[type=text]:hover {
 
 @keyframes shiver {
     0% {
-        transform: translateX(0px);
+        transform: translateX(0px) scale(1.1);
     }
     25% {
-        transform: translateX(30px);
+        transform: translateX(30px) scale(1.1);
     }
     50% {
-        transform: translateX(0px);
+        transform: translateX(0px) scale(1.1);
     }
     75% {
-        transform: translateX(-30px);
+        transform: translateX(-30px) scale(1.1);
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(0px) scale(1.1);
     }
 }
 
@@ -1139,7 +1139,10 @@ input[type=text]:focus, input[type=text]:hover {
     background-image: url("img/browser-center.png"), url("img/browser-left.png"), url("img/browser-right.png");
     background-position: bottom center, bottom left, bottom right;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    animation: multiply 5s;
+    animation: multiply 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+
 }
 
 @keyframes multiply {
