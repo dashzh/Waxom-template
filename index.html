@@ -17,7 +17,8 @@
                         d="M52.873,55.128 L58.125,45.939 L63.377,55.128 L52.873,55.128 ZM46.303,45.172 L56.811,45.172 L51.557,54.359 L46.303,45.172 ZM51.557,34.451 L56.811,43.641 L46.303,43.641 L51.557,34.451 ZM39.738,33.686 L50.243,33.686 L44.990,42.874 L39.738,33.686 ZM44.990,22.967 L50.243,32.154 L39.738,32.154 L44.990,22.967 ZM33.168,22.202 L43.676,22.202 L38.422,31.390 L33.168,22.202 ZM38.422,11.480 L43.676,20.671 L33.168,20.671 L38.422,11.480 ZM26.600,10.713 L37.108,10.713 L31.854,19.905 L26.600,10.713 ZM31.854,-0.006 L37.108,9.184 L26.600,9.184 L31.854,-0.006 ZM20.032,20.671 L25.286,11.480 L30.540,20.671 L20.032,20.671 ZM13.465,32.154 L18.718,22.967 L23.971,32.154 L13.465,32.154 ZM6.897,43.641 L12.151,34.451 L17.404,43.641 L6.897,43.641 ZM0.331,55.128 L5.582,45.939 L10.836,55.128 L0.331,55.128 ZM17.404,45.172 L12.151,54.359 L6.897,45.172 L17.404,45.172 ZM23.971,33.686 L18.718,42.874 L13.465,33.686 L23.971,33.686 ZM30.540,22.202 L25.286,31.390 L20.032,22.202 L30.540,22.202 ZM37.108,55.128 L26.600,55.128 L31.854,45.939 L37.108,55.128 ZM43.676,45.172 L38.422,54.359 L33.168,45.172 L43.676,45.172 ZM50.243,55.128 L39.738,55.128 L44.990,45.939 L50.243,55.128 Z"/>
             </svg>
             <span class="waxom-logo raleway-font">Waxom</span></a>
-        <nav class="flex-block ">
+        <p class="menu-hover" onclick="displayNav()">MENU</p>
+        <nav id="navigation">
             <li class="menu-item"><a href="#" class="menu-link hover-text">Home</a></li>
             <li class="menu-item"><a href="#" class="menu-link hover-text">About Us</a></li>
             <li class="menu-item"><a href="#" class="menu-link hover-text">Portfolio</a></li>
@@ -27,7 +28,7 @@
             <li class="menu-item"><a href="#" class="menu-link hover-text">Shortcodes</a></li>
             <li class="menu-item"><a href="#" class="menu-link hover-text">Contact</a></li>
         </nav>
-        <div class="flex-block">
+        <div class="flex-block" id="twoButtons">
             <a href="#" class="menu-link-icon">
                 <svg class="svg-color svg-hover" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" height="24px" width="18px">
                     <path
@@ -144,7 +145,7 @@
             </div>
             <div class="portfolio-examples flex-block">
                 <div class="portfolio-item">
-                    <a href="#"><img src="img/photo.png" alt="project" class="portfolio-mainImg"></a>
+                    <a href="#"><img src="img/1photo.png" alt="project" class="portfolio-mainImg"></a>
                     <p class="portfolio-description raleway-font">Claritas Etiam Processus
                         <br><span>Photography, Nature</span></p>
                     <div class="hover-portfolio-item">
@@ -167,7 +168,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <a href="#"><img src="img/photo2.png" alt="project" class="portfolio-mainImg"></a>
+                    <a href="#"><img src="img/2photo.png" alt="project" class="portfolio-mainImg"></a>
                     <p class="portfolio-description raleway-font">Quam Nutamus Farum
                         <br><span>Graphic Design, Mock-Up</span></p>
                     <div class="hover-portfolio-item">
@@ -190,7 +191,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <a href="#"><img src="img/photo3.png" alt="project" class="portfolio-mainImg"></a>
+                    <a href="#"><img src="img/3photo.png" alt="project" class="portfolio-mainImg"></a>
                     <p class="portfolio-description raleway-font">Usus Legentis Videntur
                         <br><span>Photography, Holiday</span></p>
                     <div class="hover-portfolio-item">
@@ -213,7 +214,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <a href="#"><img src="img/photo4.png" alt="project" class="portfolio-mainImg"></a>
+                    <a href="#"><img src="img/4photo.png" alt="project" class="portfolio-mainImg"></a>
                     <p class="portfolio-description raleway-font">Claritas Etiam Processus
                         <br><span>Photography, Nature</span></p>
                     <div class="hover-portfolio-item">
@@ -236,7 +237,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <a href="#"><img src="img/photo5.png" alt="project" class="portfolio-mainImg"></a>
+                    <a href="#"><img src="img/5photo.png" alt="project" class="portfolio-mainImg"></a>
                     <p class="portfolio-description raleway-font">Quam Nutamus Farum
                         <br><span>Graphic Design, Mock-Up</span></p>
                     <div class="hover-portfolio-item">
@@ -259,7 +260,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <a href="#"><img src="img/photo6.png" alt="project" class="portfolio-mainImg"></a>
+                    <a href="#"><img src="img/6photo.png" alt="project" class="portfolio-mainImg"></a>
                     <p class="portfolio-description raleway-font">Usus Legentis Videntur
                         <br><span>Photography, Holiday</span></p>
                     <div class="hover-portfolio-item">
@@ -289,14 +290,13 @@
         <div class="video-image-container">
             <img src="img/video.png" alt="video-waxom" class="video-image">
             <div class="container video-text">
+                <svg class="video-play-icon circle-svg"xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" height="69.97" width="69.969">
 
-                <svg class="video-play-icon" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 297" height="11.99mm" width="7.41mm">
                     <path
-                            style="stroke-width:8.245"
-                            id="path20"
-                            d="M 17.752137,1.5974094 A 15.964826,18.104836 0 0 0 1.6473423,19.723788 V 278.91188 a 15.848691,17.973132 0 0 0 15.9535647,18.09221 15.724812,17.832648 0 0 0 10.222396,-4.2185 L 164.96355,163.19138 a 15.895145,18.025813 0 0 0 0,-27.74708 L 27.823303,5.7644647 A 15.964826,18.104836 0 0 0 17.752137,1.5974094 Z M 33.554472,58.274283 129.85056,149.31801 33.554472,240.2927 Z"/>
+                            transform="translate(-926.031 -3634.03)"
+                            d="M955.934,3685.82a2.047,2.047,0,0,1-2.06-2.06v-29.52a2.062,2.062,0,0,1,3.379-1.59l17.714,14.77a2.053,2.053,0,0,1,0,3.16l-17.714,14.76A2.031,2.031,0,0,1,955.934,3685.82Zm2.06-27.19v20.73L970.431,3669Zm2.943,45.37a34.793,34.793,0,0,1-17.106-4.47,2.06,2.06,0,1,1,2.021-3.59,30.921,30.921,0,1,0-6.7-5.09,2.059,2.059,0,1,1-2.913,2.91A35.057,35.057,0,1,1,960.937,3704Z"/>
                 </svg>
-                <img src="img/play111111.svg" alt="" class="circle-svg">
+
                 <h2 class="raleway-font">Waxom Video Presentation</h2>
                 <p class="paragraph-style">Investigationes demonstraverunt lectores legere me lius quod ii legunt
                     saepius, qui sequitur mutationem
@@ -380,7 +380,7 @@
                 dynamicus, qui sequitur mutationem consuetudium.</p>
             <div class=" blog-articles flex-block">
                 <article class="blog-item">
-                    <a href="#" class="blog-image-link"><img src="img/photo11.png" alt="blog" class="blog-image"></a>
+                    <a href="#" class="blog-image-link"><img src="img/photo111.png" alt="blog" class="blog-image"></a>
                     <div class="blog-description">
                         <h2 class="blog-description-head raleway-font">Lorem ipsum dolor sit amet</h2>
                         <p class="blog-description-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
@@ -393,7 +393,7 @@
                     </div>
                 </article>
                 <article class="blog-item">
-                    <a href="#" class="blog-image-link"><img src="img/photo22.png" alt="blog" class="blog-image"></a>
+                    <a href="#" class="blog-image-link"><img src="img/photo222.png" alt="blog" class="blog-image"></a>
                     <div class="blog-description">
                         <h2 class="blog-description-head raleway-font">Lorem ipsum dolor sit amet</h2>
                         <p class="blog-description-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
@@ -406,7 +406,7 @@
                     </div>
                 </article>
                 <article class="blog-item">
-                    <a href="#" class="blog-image-link"><img src="img/photo33.png" alt="blog" class="blog-image"></a>
+                    <a href="#" class="blog-image-link"><img src="img/photo333.png" alt="blog" class="blog-image"></a>
                     <div class="blog-description">
                         <h2 class="blog-description-head raleway-font">Lorem ipsum dolor sit amet</h2>
                         <p class="blog-description-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
@@ -505,5 +505,15 @@
         </div>
     </div>
 </footer>
+<script>
+    function displayNav(){
+        let n = document.getElementById("navigation");
+        if (n.style.display !== "flex") {
+            n.style.display = "flex";
+        } else {
+            n.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
